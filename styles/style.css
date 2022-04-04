@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--Very-dark-blue-main-BG);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.project {
+    background-color: var(--Very-dark-blue-card-BG);
+    border-radius: 20px;
+    width: 290px;
+    padding: 20px 20px 30px 20px;
+}
+.nft {
+    background-image: url("../images/image-equilibrium.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 290px;
+    height: 290px;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+}
+
+.filter:hover {
+    width: 290px;
+    height: 290px;
+    background-color: var(--Cyan);
+    opacity: 50%;
+    background-image: url("../images/icon-view.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.filter {
+    width: 290px;
+    height: 290px;
+}
+.title {
+    color: var(--White);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    padding: 20px 0px 25px 0px;
+    cursor: pointer;
+}
+
+.title:hover {
+    color: var(--Cyan);
+}
+
+.text {
+    color: var(--Soft-blue);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 0px 0px 30px 0px;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    padding: 0px 0px 25px 0px;
+    align-items: center;
+}
+
+.price {
+    color: var(--Cyan);
+}
+
+.time {
+    
+    color: var(--Soft-blue);
+}
+
+hr {
+    border: 1px solid var(--Very-dark-blue-line);
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 20px 0px 0px 0px;
+}
+
+.info_img {
+    width: 30px;
+    border: 1px solid var(--White);
+    border-radius: 30px;
+}
+
+.info_text {
+    color: var(--Soft-blue);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+}
+
+.info_text span {
+    color: var(--White);
+    cursor: pointer;
+}
+
+.info_text span:hover {
+    color: var(--Cyan);
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
